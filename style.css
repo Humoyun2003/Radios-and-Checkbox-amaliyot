@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap');
+:root {
+    --Teko:  'Teko', sans-serif;
+    --Bitter: 'Bitter', serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(63, 57, 57);
+}
+.checkbox-content, .radio-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    height: 195px;
+}
+.container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+h1 {
+    font-family: var(--Teko);
+    font-size: 3rem;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+.work1, .work2, .work3, .work4, .work5, .work6 {
+    border-radius: 1.2rem;
+}
+.work1 {
+    background-color: #fff;
+}
+.work1 .content {
+    margin: 0 auto;
+    padding: 20px;
+}
+.work1 label input {
+    display: none;
+}
+.work1 label {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 0.4rem;
+}
+.work1 label .icon {
+    padding: 4px;
+    color: #000;
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border: 3px solid #000;
+    border-radius: 8px;
+    margin: 0 1.5rem 0 5rem;
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+.work1 label .icon i {
+    opacity: 0;
+}
+.work1 label span {
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #000;
+    display: inline-block;
+}
+.work1 .content label input:checked + .icon i {
+    opacity: 1;
+}
+.work1 .content label input:disabled + .icon {
+    color: #ccc;
+    border-color: #ccc;
+}
+
+/* End of work1 */
+
+.work2 {
+    background-color: #18191f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work2 ul {
+    position: relative;
+    display: flex;
+}
+.work2 ul li {
+    list-style: none;
+
+}
+.work2 ul li label {
+    position: relative;
+}
+.work2 ul li label input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.work2 ul li label .icon {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 1rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: -1px -1px 4px rgba(255, 255, 2555, 0.05),
+                4px 4px 6px rgba(0, 0, 0, 0.2),
+                inset -1px -1px 4px rgba(255, 255, 2555, 0.05),
+                inset 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+.work2 ul li label input[type="checkbox"]:checked ~ .icon .fas {
+    color: #fff;
+}
+
+/* End of work2 */
+
+.work3 {
+    background-color: rgb(0, 253, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work3 ul {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin-top: 10px
+}
+.work3 ul li {
+    padding-bottom: 15px;
+}
+.work3 ul .li-name {
+    list-style: none;
+}
+.work3 ul .li-name h2 {
+    color: #555;
+    padding-left: 1rem;
+    transition: all 1s ease;
+}
+.work3 ul .li-icon {
+    list-style: none;
+    background-color: rgb(209, 234, 243);
+    border-radius: 10px;
+}
+.work3 ul .li-icon label {
+    position: relative;
+}
+.work3 ul .li-icon label input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.work3 ul .li-icon label .icon {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+    color: #555;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: -1px -1px 4px rgba(255, 255, 2555, 0.05),
+                4px 4px 6px rgba(0, 0, 0, 0.2),
+                inset -1px -1px 4px rgba(255, 255, 2555, 0.05),
+                inset 4px 4px 6px rgba(0, 0, 0, 0.5);
+    margin-right: 20px;
+    transition: all 0.5s ease;
+}
+.work3 ul .li-icon label input[type="checkbox"]:checked ~ .icon .fas {
+    color: rgb(19, 7, 255);
+}
+.work3 ul .li-icon label input[type="checkbox"]:checked ~ .icon {
+    margin-right: 0;
+    margin-left: 20px;
+}
+.work4 {
+    background-color: #fff;
+}
+.work4 .content {
+    margin: 0 auto;
+    padding: 20px;
+}
+.work4 label input {
+    display: none;
+}
+.work4 label {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 0.4rem;
+}
+.work4 label .icon {
+    padding: 4px;
+    color: #000;
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border: 3px solid #000;
+    border-radius: 8px;
+    margin: 0 1.5rem 0 5rem;
+    transition: all 0.5s ease;
+    opacity: 1;
+}
+.work4 label .icon i {
+    opacity: 0;
+}
+.work4 label span {
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #000;
+    display: inline-block;
+}
+.work4 .content label input:checked + .icon i {
+    opacity: 1;
+}
+.work4 .content label input:disabled + .icon {
+    border-color: #ccc;
+}
+
+/* End of work4 */
+
+.work5 {
+    background-color: #18191f;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+}
+.work5 .custom-radio {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 3.5rem;
+}
+.work5 .custom-radio input {
+    display: none;
+}
+
+.work5 .custom-radio .hobbies-icon {
+    align-items: center;
+    padding-top: 15px;
+    width: 50px;
+    height: 55px;
+    border: 1.5px solid transparent;
+    display: inline-block;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 20px rgb(253, 215, 0);
+    cursor: pointer;
+}
+.work5 .custom-radio .hobbies-icon h4 {
+    color: rgb(253, 215, 0);
+    font-family: var(--Bitter);
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 80px;
+}
+.work5 .custom-radio input:checked + .hobbies-icon {
+    border: 3px solid rgb(253, 215, 0);
+    top: -1.5px;
+}
+
+/* End of work5 */
+
+.work6  {
+    background-color: rgb(0, 253, 253);
+}
+.work6 .content {
+    margin: 0 auto;
+    padding: 20px;
+}
+.work6 label input {
+    display: none;
+}
+.work6 label {
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 0.4rem;
+}
+.work6 label .icon {
+    padding: 4px;
+    color: #555;
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border: 3px solid #555;
+    border-radius: 10px;
+    margin: 0 1.5rem 0 5rem;
+    transition: all 0.5s ease;
+}
+.work6 label span {
+    display: inline-block;
+    font-size: 1.7rem;
+    color: #555;
+    display: inline-block;
+}
+.work6 .content label input:checked + .icon {
+    border: 3px solid #ff9800;
+    color: #ff9800;
+}
+
+/* End of work6 */
